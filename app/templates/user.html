@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <title>IAP Flask</title>
+  </head>
+  <body>
+    <div class="backdrop">
+      <div class="form__container">
+      </div>
+    </div>
+    <div class="container">
+      <div class="details__container">
+        <h1 class="details__title">{{ username }}</h1>
+        <h3 class="details__subtitle">
+          You have logged in.
+        </h3>
+      </div>
+      <div class="logo__container">
+        <img
+          class="logo"
+          src="{{ url_for('static', filename='img/flask.svg') }}"
+          alt="Flask Python Microframework"
+        />
+      </div>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bundle.js') }}"></script>
+    </body>
+  </body>
+</html>

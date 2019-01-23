@@ -1,0 +1,9 @@
+# SQL
+SQLALCHEMY_DATABASE_URI = "mysql://"
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+PREFERRED_URL_SCHEME = "https"
+PROPAGATE_EXCEPTIONS = True
+
+SECRET_KEY = "super-secret"
+JWT_SECRET_KEY = "super-secret"
+JWT_TOKEN_LOCATION = ['headers', 'cookies']
